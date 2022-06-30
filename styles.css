@@ -16,6 +16,45 @@ header p {
   margin-bottom: 0;
 }
 
+.vl {
+  position: relative;
+}
+
+.vl:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 90%;
+  top: 5%;
+  border-radius: 3px;
+}
+
+.vl__purple:after {
+  right: 20px;
+  background-color: purple;
+}
+.vl__orange:after {
+  left: 15px;
+  background-color: orange;
+}
+.vl__green:after {
+  right: 20px;
+  background-color: green;
+}
+.vl__blue:after {
+  left: 15px;
+  background-color: blue;
+}
+.vl__yellow:after {
+  right: 20px;
+  background-color: yellow;
+}
+.vl__pink:after {
+  left: 15px;
+  background-color: pink;
+}
+
 .hexa {
   border: 0px;
   float: left;
@@ -198,30 +237,6 @@ header p {
     0 0 1px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.15);
-}
-
-.time-wrapper {
-  display: block;
-  position: relative;
-  margin: 4px 0 0 0;
-  z-index: 14;
-  line-height: 1em;
-  vertical-align: middle;
-  color: #fff;
-}
-
-.direction-l .time-wrapper {
-  float: none;
-}
-
-.direction-r .time-wrapper {
-  float: none;
-}
-
-.time {
-  background: #00c4f3;
-  display: inline-block;
-  padding: 8px;
 }
 
 .desc {
